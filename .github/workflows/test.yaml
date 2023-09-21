@@ -5,8 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: print hello
-       run: echo "Hello"
-     - name: print bye
-       run: |
-         echo "completed"
-         echo "good bye!"
+       run: echo "${{ toJSON(github) }}
